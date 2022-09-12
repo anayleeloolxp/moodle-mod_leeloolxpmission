@@ -32,4 +32,8 @@ $string['modulename_link'] = 'mod/leeloolxpmission/view';
 $string['modulenameplural'] = 'Leeloo LXP Missions';
 $string['pluginadministration'] = 'Leeloo LXP Missions module administration';
 
+$string['leeloolxpmission:addinstance'] = 'Add a new Leeloo LXP Missions';
+$string['leeloolxpmission:submit'] = 'Submit Leeloo LXP Missions';
+$string['leeloolxpmission:view'] = 'View Leeloo LXP Missions';
+
 $string['privacy:metadata'] = 'The Leeloo LXP Missions plugin only shows information and does not store user data.';

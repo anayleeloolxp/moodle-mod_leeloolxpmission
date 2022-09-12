@@ -52,7 +52,10 @@ echo $OUTPUT->heading($modulenameplural);
 $leeloolxpmissions = get_all_instances_in_course('leeloolxpmission', $course);
 
 if (empty($leeloolxpmissions)) {
-    notice(get_string('no$leeloolxpmissioninstances', 'mod_leeloolxpmission'), new moodle_url('/course/view.php', array('id' => $course->id)));
+    notice(
+        get_string('no$leeloolxpmissioninstances', 'mod_leeloolxpmission'),
+        new moodle_url('/course/view.php', array('id' => $course->id))
+    );
 }
 
 $table = new html_table();
@@ -83,7 +86,7 @@ foreach ($leeloolxpmissions as $leeloolxpmission) {
         );
     }
 
-    if ($course->format == 'weeks' or $course->format == 'topics') {
+    if ($course->format == 'weeks' || $course->format == 'topics') {
         $table->data[] = array($leeloolxpmission->section, $link);
     } else {
         $table->data[] = array($link);
